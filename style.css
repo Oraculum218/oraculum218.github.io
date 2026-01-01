@@ -1,0 +1,9 @@
+a {
+  text-decoration: none; 
+}
+
+img {
+  max-width: min(100%, 600px);
+  margin: 0 auto;  
+  display: block;
+}
