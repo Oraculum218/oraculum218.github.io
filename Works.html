@@ -1,12 +1,12 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="avatar.png">
-    <link rel="stylesheet" href="style.css">
-    <title>Oraculum的個人網站 - 作品集</title>
-  </head>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="avatar.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Oraculum的個人網站 - 作品集</title>
+</head>
 <body>
   <nav class="navbar">
     <div class="navbar-container">
@@ -22,47 +22,13 @@
   </nav>
   <div class="overlay" id="overlay"></div>
 
-  <div class="container">
+  <main class="container">
     <h1 style="text-align:center;">作品集</h1>
     <p style="text-align:center;">尚無任何作品。</p>
     <p style="text-align:center;">No works yet.</p>
     <img src="avatar.png" alt="相片">
-    <br>
-  </div>
- <script>
-    const menuToggle = document.getElementById('menuToggle');
-    const navLinks = document.getElementById('navLinks');
-    const overlay = document.getElementById('overlay');
-    
-    menuToggle.addEventListener('click', function() {
-      navLinks.classList.toggle('active');
-      overlay.classList.toggle('active');
-    });
-    
-    overlay.addEventListener('click', function() {
-      navLinks.classList.remove('active');
-      overlay.classList.remove('active');
-    });
-    
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', function() {
-        navLinks.classList.remove('active');
-        overlay.classList.remove('active');
-      });
-    });
-    
-    document.addEventListener('DOMContentLoaded', function() {
-      const currentPage = window.location.href;
-      const navItems = document.querySelectorAll('.nav-links a');
-      
-      navItems.forEach(item => {
-        if (item.href === currentPage) {
-          item.classList.add('active');
-        } else {
-          item.classList.remove('active');
-        }
-      });
-    });
-  </script>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
