@@ -1,68 +1,36 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="zh-TW">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="avatar.png">
     <link rel="stylesheet" href="style.css">
     <title>Oraculum的個人網站 - 首頁</title>
-  </head>
-<body>
-  <nav class="navbar">
-    <div class="navbar-container">
-      <div class="title">首頁</div>
-      <button class="menu-toggle" id="menuToggle">☰</button>
-      <ul class="nav-links" id="navLinks">
-        <li><a>首頁</a></li>
-        <li><a href="Works.html">作品集</a></li>
-        <li><a href="About.html">關於我</a></li>
-        <div class="copyright">© 2026 Oraculum</div>
-      </ul>
-    </div>
-  </nav>
-  <div class="overlay" id="overlay"></div>
+</head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="title">首頁</div>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a>首頁</a></li>
+          <li><a href="Works.html">作品集</a></li>
+          <li><a href="About.html">關於我</a></li>
+          <div class="copyright">© 2026 Oraculum</div>
+        </ul>
+      </div>
+    </nav>
+  
+    <div class="overlay" id="overlay"></div>
 
-  <div class="container">
-    <h1 style="text-align:center;">Oraculum的個人網站</h1>
-    <p style="text-align:center;">該網站尚在建設中。你可以透過<a href="mailto:oraculum218@gmail.com">我的電郵</a>聯絡我。</p>
-    <p style="text-align:center;">This website is still under construction. Please contact me via <a href="mailto:oraculum218@gmail.com">email</a>.</p>
-    <img src="avatar.png" alt="相片">
-    <br>
-  </div>
- <script>
-    const menuToggle = document.getElementById('menuToggle');
-    const navLinks = document.getElementById('navLinks');
-    const overlay = document.getElementById('overlay');
+    <div class="container">
+      <h1 style="text-align:center;">Oraculum的個人網站</h1>
+      <p style="text-align:center;">該網站尚在建設中。你可以透過<a href="mailto:oraculum218@gmail.com">我的電郵</a>聯絡我。</p>
+      <p style="text-align:center;">This website is still under construction. Please contact me via <a href="mailto:oraculum218@gmail.com">email</a>.</p>
+      <img src="avatar.png" alt="相片">
+      <br>
+    </div>
     
-    menuToggle.addEventListener('click', function() {
-      navLinks.classList.toggle('active');
-      overlay.classList.toggle('active');
-    });
-    
-    overlay.addEventListener('click', function() {
-      navLinks.classList.remove('active');
-      overlay.classList.remove('active');
-    });
-    
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', function() {
-        navLinks.classList.remove('active');
-        overlay.classList.remove('active');
-      });
-    });
-    
-    document.addEventListener('DOMContentLoaded', function() {
-      const currentPage = window.location.href;
-      const navItems = document.querySelectorAll('.nav-links a');
-      
-      navItems.forEach(item => {
-        if (item.href === currentPage) {
-          item.classList.add('active');
-        } else {
-          item.classList.remove('active');
-        }
-      });
-    });
-  </script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
