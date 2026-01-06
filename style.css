@@ -6,7 +6,7 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  background-color: grey;
+  background-image: url("Solek_From_the_Ashes_Concept_Art.jpg");
 }
 
 a {
