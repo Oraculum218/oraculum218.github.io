@@ -7,6 +7,9 @@ body {
   display: flex;
   flex-direction: column;
   background-image: url("res/Solek_From_the_Ashes_Concept_Art.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 a {
