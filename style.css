@@ -28,6 +28,22 @@ img {
   display: block;
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: min(100%, 600px);
+  margin: 0 auto;
+  table-layout: fixed; 
+  word-break: break-word;
+  text-align: center;
+}
+
+td, th {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+}
+
 .headline {
   background-image: 
     linear-gradient(to bottom, 
