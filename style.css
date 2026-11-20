@@ -63,6 +63,24 @@ td, th {
   transform: translateY(-5px);
 }
 
+.hint-box {
+  margin: auto;
+  border: 1px solid #000;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 500px;
+  background-color: #EDEDED; 
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hint-box h2 {
+  padding-left: 24px;
+}
+
+.hint-info:hover {
+  transform: translateY(-5px);
+}
+
 .headline {
   background-image: 
     linear-gradient(to bottom, 
