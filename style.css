@@ -48,7 +48,7 @@ td, th {
 .article-container {
   margin: 0 auto;
   width: 100%;
-  max-width: min(100%, 500px);
+  max-width: min(100%, 600px);
 }
 
 .contact-info {
