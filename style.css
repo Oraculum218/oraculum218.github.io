@@ -82,7 +82,8 @@ td, th {
 }
 
 .article-content {
-  margin:8px;
+  width: 100%;
+  max-width: min(100%, 600px);
 }
 
 .headline {
